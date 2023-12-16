@@ -1,0 +1,97 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+  *{
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+  }  
+  html body{
+     width: 100vw;
+     height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(375deg, #1cc7d9,#2ede98);
+    
+  }
+  .wrapper{
+     height: 400px;
+     width: 320px;
+     position: relative;
+     border: 2px solid black;
+     border-radius:10px;
+     transform-style: preserve-3d;
+     perspective: 1000px;
+    
+} 
+  .wrapper .card{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: white;
+      border-radius:10px;
+      transform: rotateY(1800deg);
+      -webkit-transform: rotateY(1800deg);
+      -moz-transform: rotateY(1800deg);
+      -ms-transform: rotateY(1800deg);
+      -o-transform: rotateY(1800deg);
+      transition: all 0.5s linear;
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+}  
+.wrapper:hover > .back-face{
+     transform: rotateY(180deg);
+     -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+     -ms-transform: rotateY(180deg);
+     -o-transform: rotateY(180deg);
+} 
+  .wrapper .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius:10px;
+    
+} 
+.wrapper .back-face{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     transform: rotateY(0deg);
+     -webkit-transform: rotateY(0deg);
+     -moz-transform: rotateY(0deg);
+     -ms-transform: rotateY(0deg);
+     -o-transform: rotateY(0deg);
+} 
+.title{
+     text-align: center;
+} 
+.icon{
+    letter-spacing: 20px;
+    font-size:25px ;
+    color: black;    
+} 
+.icon:hover{
+     color: red;
+     transition: all 0.3s linear ;
+     -webkit-transition: all 0.3s linear ;
+     -moz-transition: all 0.3s linear ;
+     -ms-transition: all 0.3s linear ;
+     -o-transition: all 0.3s linear ;
+}
+.wrapper .back-face img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: linear-gradient(375deg, rgba(0, 12, 13,0.3),rgba(1, 13, 8,0.3));
+    padding:2px ;
+
+}
